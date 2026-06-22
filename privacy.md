@@ -131,7 +131,7 @@ If you have questions about this Privacy Policy or our privacy practices, please
 
 <div class="contact-info">
 <h3>Skopi Privacy Team</h3>
-<p><strong>Email:</strong> <a href="mailto:privacy@skopi.com">privacy@skopi.com</a></p>
+<p><strong>Email:</strong> <a href="mailto:privacy@skopi.ai">privacy@skopi.ai</a></p>
 </div>
 
 <div class="highlight" style="text-align: center; margin: 40px 0;">
