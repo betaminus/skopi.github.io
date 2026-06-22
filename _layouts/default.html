@@ -10,8 +10,10 @@
 </head>
 <body>
   <header class="site-header">
-    <img class="logo" src="{{ '/assets/skopi-mark.png' | relative_url }}" alt="skopi logo">
-    <span class="brand">{{ site.title }}</span>
+    <a class="brand-link" href="{{ '/' | relative_url }}">
+      <img class="logo" src="{{ '/assets/skopi-mark.png' | relative_url }}" alt="skopi logo">
+      <span class="brand">{{ site.title }}</span>
+    </a>
   </header>
 
   {{ content }}

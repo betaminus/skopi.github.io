@@ -30,6 +30,12 @@ a:hover { text-decoration: underline; }
   margin: 0 auto;
   padding: 20px;
 }
+.site-header .brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.site-header .brand-link:hover { text-decoration: none; }
 .site-header .logo { height: 36px; width: auto; }
 .site-header .brand { font-size: 22px; font-weight: 600; color: var(--text); }
 
