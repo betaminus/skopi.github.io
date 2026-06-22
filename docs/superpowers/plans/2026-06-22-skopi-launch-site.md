@@ -49,7 +49,16 @@ Gemfile.lock
 ```ruby
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+# Local preview/build. The site is plugin-free, so GitHub Pages' classic
+# server-side build (which uses its own toolchain) renders it identically.
+# Jekyll 4.x is used locally because the github-pages gem pins Jekyll 3.9,
+# which cannot run on Ruby 3.2+ (removed `tainted?`/`csv`).
+gem "jekyll", "~> 4.3"
+
+# stdlib gems removed from Ruby's defaults in 3.4+, required by Jekyll deps
+gem "csv"
+gem "base64"
+gem "bigdecimal"
 ```
 
 - [ ] **Step 3: Create `_config.yml`**
@@ -76,12 +85,14 @@ exclude:
 
 - [ ] **Step 4: Install dependencies and build**
 
-Run: `bundle install && bundle exec jekyll build`
-Expected: Build completes; `_site/` directory is generated with no errors.
+Ruby 4.x is installed via Homebrew but not on the default PATH. Prefix build
+commands with the PATH export (or add it to your shell profile):
 
-> If `bundle install` fails on the local Ruby setup, fall back to a directly
-> installed Jekyll: `gem install jekyll` then `jekyll build`. The site uses no
-> Pages-only plugins, so plain Jekyll builds it identically.
+Run: `export PATH="/opt/homebrew/opt/ruby/bin:$PATH" && bundle config set --local path 'vendor/bundle' && bundle install && bundle exec jekyll build`
+Expected: `Bundle complete!` then a Jekyll build that ends with `done in ... seconds`; `_site/` directory is generated with no errors.
+
+> All later build/verify steps must use the same `export PATH=...` prefix so
+> `ruby`/`bundle`/`jekyll` resolve to the Homebrew Ruby 4.x, not system Ruby 2.6.
 
 - [ ] **Step 5: Commit**
 
