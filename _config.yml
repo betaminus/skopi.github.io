@@ -1,0 +1,17 @@
+# Brand / display
+title: skopi.ai
+description: "skopi — monitoring service. Launching soon."
+
+# Landing page copy (config-driven subtext under the headline)
+tagline: "Monitoring, reimagined. Something new is on the way."
+
+# Optional notify link: a mailto: address or URL.
+# Leave empty ("") to hide the button.
+notify_link: ""
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs/
