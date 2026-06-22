@@ -7,10 +7,6 @@ permalink: /terms/
 
 <p class="last-updated">Last Updated: June 22, 2026</p>
 
-<div class="important">
-<strong>Template notice:</strong> This document is a general template provided for convenience and does not constitute legal advice. Please have it reviewed and adapted by qualified legal counsel before relying on it.
-</div>
-
 ## 1. Acceptance of Terms
 
 These Terms and Conditions ("Terms") govern your access to and use of the Skopi monitoring service, websites, and related SMS alert features (collectively, the "Service") provided by Skopi ("we," "us," "our," or "Company").
