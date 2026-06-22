@@ -1,3 +1,11 @@
+# Site URL / paths
+# Served at the apex custom domain root (see CNAME), so baseurl must be empty.
+# This repo is a project site (owner != repo name), and GitHub Pages otherwise
+# auto-injects baseurl: /skopi.github.io, which breaks asset/link paths at the
+# domain root. Setting it explicitly here overrides that.
+url: "https://skopi.ai"
+baseurl: ""
+
 # Brand / display
 title: skopi.ai
 description: "skopi — monitoring service. Launching soon."
