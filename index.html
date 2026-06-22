@@ -19,7 +19,10 @@ layout: null
     {% if site.notify_link and site.notify_link != "" %}
     <a class="notify" href="{{ site.notify_link }}">Notify me</a>
     {% endif %}
-    <a class="policy-link" href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+    <p class="policy-link">
+      <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a> ·
+      <a href="{{ '/terms/' | relative_url }}">Terms &amp; Conditions</a>
+    </p>
   </main>
 </body>
 </html>
